@@ -53,7 +53,7 @@ CONFIG_SCHEMA_BASE = cv.Schema(
 ).extend(cv.polling_component_schema("60s"))
 
 CONFIG_SCHEMA = CONFIG_SCHEMA_BASE.extend(
-    i2c.i2c_device_schema(default_address=0x23)
+    i2c.i2c_device_schema(default_address=0x29)
 ).extend({cv.GenerateID(): cv.declare_id(BH1730Component)})
 
 
